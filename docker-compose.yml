@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+    restart: always
+
+  frontend:
+    image: python:3.10
+    working_dir: /frontend
+    volumes:
+      - ./frontend:/frontend
+    command: >
+      sh -c "pip install --no-cache-dir streamlit requests && streamlit run app.py --server.port 8501 --server.enableCORS false"
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
