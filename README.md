@@ -9,10 +9,19 @@ This project implements a workflow that uses multi-modal Large Language Models (
   1. Upload a brand kit (PDF) containing brand compliance information.
   
   2. Upload an image asset (JPG or PNG).
+
+     ![image](https://github.com/user-attachments/assets/263c0516-a221-49da-8c72-e46584e9bb7c)
+
   
   3. The system extracts brand rules and the LLM evaluates compliance.
-  
+
+     ![image](https://github.com/user-attachments/assets/2ab698df-2bb0-441f-a825-c19a83518dbd)
+
+     
   4. Receive a compliance score between 0 and 4, with optional detailed reasoning.
+
+     ![image](https://github.com/user-attachments/assets/ab5b3e13-d9f0-4097-b5de-c67c3d2813a6)
+
 
 ---
 ## Project Structure
